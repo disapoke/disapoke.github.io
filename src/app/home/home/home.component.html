@@ -1,0 +1,11 @@
+<div id="home-component">
+    <p>Last Played:</p>
+    <div id="games-list-last-played">
+    </div>
+    <p>All Games:</p>
+    <div id="games-list-all">
+        <div class="game-card-container" *ngFor="let game of games">
+            <app-game-card [game]="game" [attempts]="0" [wins]="0"></app-game-card>
+        </div>
+    </div>
+</div>

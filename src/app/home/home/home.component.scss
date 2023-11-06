@@ -1,0 +1,26 @@
+#home-component {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 100%;
+
+    p {
+        flex: 0 0 content;
+    }
+
+    #games-list-all, #games-last-played {
+        background-color: lightcoral; //DEBUG
+        flex: 0 0 content;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        .game-card-container {
+            flex: 0 0 content;
+
+            padding: 20px;
+        }
+    }
+
+}
